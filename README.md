@@ -241,7 +241,7 @@ port-status-monitor/
 
 
 ### Log File
-![log](screenshots/port_log.png)
+![log](screenshots/logs.png)
 
 ## References
 
