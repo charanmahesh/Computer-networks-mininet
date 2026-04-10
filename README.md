@@ -43,7 +43,7 @@ In traditional networks, detecting a port failure requires manual inspection or 
 sudo apt-get install mininet
 
 # Install Ryu
-pip install ryu
+pip install ryu #downgrade python to python 3.9 before        installing ryu)
 
 # Install iperf (usually pre-installed)
 sudo apt-get install iperf
@@ -52,8 +52,8 @@ sudo apt-get install iperf
 ### Clone the Repo
 
 ```bash
-git clone https://github.com/<your-username>/port-status-monitor
-cd port-status-monitor
+git clone https://github.com/charanmahesh>/Computer-networks-mininet
+cd Computer-networks-mininet
 ```
 
 ---
@@ -191,7 +191,7 @@ port-status-monitor/
 ├── topology.py       # Mininet topology (2 switches, 4 hosts)
 ├── port_monitor.py   # Ryu controller (core logic)
 ├── port_log.txt      # Auto-generated event log
-├── screenshots/      # Wireshark captures, terminal output, flow tables
+├── screenshots/      # Wireshark captures, terminal output, 
 └── README.md         # This file
 ```
 
@@ -208,6 +208,40 @@ port-status-monitor/
 | OpenFlow message types | PortStatus, FlowMod, PacketOut, PortDescStats |
 
 ---
+
+## EXECUTION
+
+## Proof of Execution
+
+### Scenario 1 - Normal Operation
+#### Pingall
+![pingall](screenshots/pingall.png)
+
+#### Ping h1 to h3
+![ping](screenshots/ping_h1_h3.png)
+
+#### iperf Throughput
+![iperf](screenshots/iperf.png)
+
+#### Flow Table
+![flows](screenshots/dump_flows.png)
+
+
+
+### Scenario 2 - Port Failure
+#### Port Down Alert
+![alert](screenshots/port_down-1.png),(screenshots/port_down-2.png),
+
+#### Ping Fails
+![fail](screenshots/ping_fail.png)
+
+### Scenario 3 - Recovery and Ping Restored
+#### All Ports Up
+![up](screenshots/port_up.png)
+
+
+### Log File
+![log](screenshots/port_log.png)
 
 ## References
 
