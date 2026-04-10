@@ -1,0 +1,9 @@
+PORT STATUS MONITORING LOG
+Started: 2026-04-10 10:34:15.942
+----------------------------------------------------------------------
+Timestamp                  Switch   Port   Name           Event
+----------------------------------------------------------------------
+2026-04-10 10:35:29.764    s2       3      s2-eth3        PORT_MODIFIED: UP → DOWN
+2026-04-10 10:35:29.773    s1       3      s1-eth3        PORT_MODIFIED: UP → DOWN
+2026-04-10 10:35:40.305    s1       3      s1-eth3        PORT_MODIFIED: DOWN → UP
+2026-04-10 10:35:40.325    s2       3      s2-eth3        PORT_MODIFIED: DOWN → UP
